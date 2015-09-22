@@ -1,0 +1,16 @@
+ChatBox
+ChatRoom  UserName Message TimeFrame
+#x        #some     #hi     just now
+#y        #another  #bye    after some
+#z        #some     #c u    then after
+
+
+queries:
+
+on connect
+#display all channels he registered.......
+
+on select
+#display till chat box with previous conversation
+
+on push/on delete

@@ -1,0 +1,14 @@
+
+
+hmset chat:1 message "hello everyone" by "ravi" chat_room "devathon"
+
+hmset chat:2 message "bye everyone" by "jrk" chat_room "devathon"
+
+
+hgetall chat:1
+hgetall chat:2
+
+sadd chats 1
+sadd chats 2
+
+

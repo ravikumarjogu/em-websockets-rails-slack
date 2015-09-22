@@ -1,0 +1,42 @@
+
+>rails new rails-user
+
+> Open Gemfile
+  #add gems
+    gem 'therubyracer'
+    gem 'devise'
+> bundle install
+> rails g devise:install
+> rails g devise User
+> bundle exec rake db:migrate
+
+
+
+
+>How to start
+  >cd slack
+  >bundle exec rake db:migrate
+  >rails s
+
+  >cd event-machine
+  >./server_em.rb
+
+
+  notifications on what??
+  User:
+  
+   User added
+   User joined(signed_in)
+  * User left(optional)
+  
+  Channel:
+
+  * Channel score...(most engaging, More users)
+   New group created
+
+  mix:
+  * Selected User on particular Channel(optional)
+ 
+
+  *Bootstrapping views
+  *Adding timeago to each feed/message

@@ -1,0 +1,22 @@
+<div class="container">
+    <h2 id="title">#slack</h2>
+    <ul class="pull-left">
+      <li style="float:left">
+          <%= link_to "Channels", chatroom_chat_room_path %>
+          <span id="notification"><span>
+      </li>
+      <li >
+          <%= link_to "Profile", edit_user_registration_path %>
+      </li>
+    </ul>
+    <ul class="pull-right">
+      <li >
+          (Logged in as <%= link_to current_user.username,"#" %>)
+      </li>
+      <li >
+          <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+      </li>
+  
+    </ul>
+
+</div>

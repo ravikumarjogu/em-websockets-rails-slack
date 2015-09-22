@@ -1,0 +1,176 @@
+// Place all the styles related to the Chatroom controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+$google_font: 'Varela Round', sans-serif;
+//$google_font: normal 40px/1.2 'Bree Serif', Georgia, serif;
+
+form#send_message {
+  display: none;
+}
+
+#logo{
+  
+}
+#title{
+  font-family: $google_font;
+  size: 25px;
+}
+
+li{
+  display:inline;
+  font-family: $google_font;
+  
+}
+a:link:hover{
+  text-decoration:none;
+}
+a{
+  font-size: 20px;
+  margin: 5px;
+  font-family: $google_font;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:none;
+}
+
+.group:hover{
+  background-color: rgb(21, 186, 186);
+  text-decoration:none;
+}
+
+.group{
+  padding-left: 15px;
+  margin: 5px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-bottom:0px;
+  display: block;
+  //background-color: rgb(219, 186, 186);
+  border-right: 1px solid rgb(219, 186, 186);
+  border-right-radius: 25px;
+}
+
+.active{
+  //background-color: rgb(119, 181, 119);
+  border-left: 10px solid rgb(119, 181, 119);
+  border-right: 0px;
+  
+  padding-left: 0px;
+}
+
+.active:before{
+  border-bottom: 2px solid rgb(119, 181, 119);
+  border-bottom-right-radius:2em;
+  content: '';
+  min-height:5px;
+  display:block;
+   
+}
+.active:after{
+  border-top: 2px solid rgb(119, 181, 119);
+  border-top-right-radius:2em;
+  content: '';
+  min-height:5px;
+  display:block;
+   
+}
+
+.notifications{
+  background-color:transparent;
+  min-height: 210px;
+  width: 100%;
+  margin-left:0px;
+}
+
+.wrap_notifications{
+  height: 160px;
+  width: 90%;
+  float:left;
+  margin:15px;
+  //background-color:rgb(119, 181, 119);
+  overflow-y: auto;
+  outline: 0;
+  padding-left:0px;
+}
+.slack_div{
+  display: inline;
+}
+.slack_div li{
+  display: block;
+}
+
+.wrap_group{
+  
+}
+.section_title{
+  
+  font-family: $google_font;
+  font-weight:bold;
+}
+
+dl{
+    font-family: $google_font;
+}
+.show_it{
+  display:'';  
+}
+.close_it{
+  display:none;
+}
+
+.wrap_group{
+  height: 500px;
+  width: 90%;
+  float:left;
+  margin-left:0px;
+  //background-color:rgb(119, 181, 119);
+  overflow-y: auto;
+  outline: 0;
+}
+#messages-input-container {
+  font-size: .9rem;
+  position: absolute;
+  top: 555px;
+  left: 0px;
+  right: 4px;
+  float: left;
+  padding-right: 1rem;
+}
+
+dd{
+  font-size:18px;
+
+}
+
+@media (min-width: 768px) {
+.dl-horizontal dt {
+  text-align:center;
+}
+}
+.timedate{
+  font-size:12px;
+  padding:15px;
+  padding-top:20px;
+  margin-top:25px;
+  
+}
+
+dd{
+  text-align: justify;
+    text-justify: inter-word;
+}
+
+.hightlight_it{
+  font-weight: bold;
+  background-color:rgba(219, 186, 186, 0.83);
+}
+
+.message-row{
+  padding:0px;
+  margin:1px;
+}

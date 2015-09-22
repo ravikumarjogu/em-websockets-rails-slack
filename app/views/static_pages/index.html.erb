@@ -1,0 +1,10 @@
+<% if user_signed_in? %>
+    <%= render 'shim/profile_header' %>
+<% else %>
+  <h3>#slack</h3>
+
+  <ul>
+  <li><%= link_to "Register", new_user_registration_path %></li>
+  <li><%= link_to "Login", new_user_session_path %></li>
+  </ul>
+<% end %>

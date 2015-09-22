@@ -1,0 +1,15 @@
+rails_date="2015-09-04 11:25:16".replace(/-/g,'/')
+"2015/09/04 11:25:16"
+rails_date=new Date(rails_date)
+Fri Sep 04 2015 11:25:16 GMT+0530 (IST)
+rails_date.toUTCString()
+"Fri, 04 Sep 2015 05:55:16 GMT"
+
+redis_date="2015-09-16 05:47:32 UTC".replace(/-/g,'/')
+"2015/09/16 05:47:32 UTC"
+redis_date=new Date(redis_date)
+Wed Sep 16 2015 11:17:32 GMT+0530 (IST)
+redis_date.toUTCString
+function toUTCString() { [native code] }
+redis_date.toUTCString()
+"Wed, 16 Sep 2015 05:47:32 GMT"
