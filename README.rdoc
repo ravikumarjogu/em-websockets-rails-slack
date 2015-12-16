@@ -1,5 +1,5 @@
-= Rails EM Chat web app
-demo here[https://mslack.herokuapp.com/]
+= Event Machine Chatting web app for Rails
+Find demo here[https://mslack.herokuapp.com/]
 == Motivation
 A tryout chat app using JS and Rails. 
 
@@ -24,7 +24,7 @@ Run rails server
 
 Now you can see at http://localhost:3000/ in your browser.
 
-== Chat application
+== Inside application
 === Channels
 User creates channels(public) at any time. User can also join other public channels..
 
@@ -32,5 +32,5 @@ User creates channels(public) at any time. User can also join other public chann
 User can privately send and receive messages with other users. Its pretty easy to start with conversation with other user.
 
 == References
-stackoverflow[http://stackoverflow.com/], Redis[http://redis.io/],
+stackoverflow[http://stackoverflow.com/], Redis[http://redis.io/]
 
