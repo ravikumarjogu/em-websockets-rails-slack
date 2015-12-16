@@ -12,9 +12,10 @@ It involves running up three servers includes:
 * Redis
 * Rails
 
-A suggest you fork it and follow below instructions
+A suggest you +fork+ it and follow below instructions
   $cd em-websockets-rails-slack  
   $bundle install
+  $bundle exec rake db:migrate
 Run evenmachine by  
   $ruby event-machine/server_em.rb
 Run Redis server
