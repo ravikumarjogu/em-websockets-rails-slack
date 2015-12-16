@@ -1,7 +1,7 @@
 = Event Machine Chatting web app for Rails
 Find demo here[https://mslack.herokuapp.com/]
 == Motivation
-A tryout chat app using JS and Rails. 
+A tryout chat app for Slack[http://slack.com/] like app using JS and Rails. 
 
 ==Dependencies
 * Redis
@@ -16,7 +16,7 @@ A suggest you +fork+ it and follow below instructions
   $cd em-websockets-rails-slack  
   $bundle install
   $bundle exec rake db:migrate
-Run evenmachine by  
+Run event machine by  
   $ruby event-machine/server_em.rb
 Run Redis server
   $redis-server
