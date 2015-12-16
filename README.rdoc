@@ -5,14 +5,32 @@ A tryout chat app using JS and Rails.
 
 ==Dependencies
 * Redis
-* Websockets
 
 == Usage
-A suggest you fork it and follow below instructions
-  bundle install
-  
+It involves running up three servers includes:
+* Eventmachine websocket
+* Redis
+* Rails
 
+A suggest you fork it and follow below instructions
+  $cd em-websockets-rails-slack  
+  $bundle install
+Run evenmachine by  
+  $ruby event-machine/server_em.rb
+Run Redis server
+  $redis-server
+Run rails server
+  $rails s
+
+Now you can see at http://localhost:3000/ in your browser.
+
+== Chat application
+=== Channels
+User creates channels(public) at any time. User can also join other public channels..
+
+=== Private chat
+User can privately send and receive messages with other users. Its pretty easy to start with conversation with other user.
 
 == References
-stackoverflow[http://stackoverflow.com/]
+stackoverflow[http://stackoverflow.com/], Redis[http://redis.io/],
 
